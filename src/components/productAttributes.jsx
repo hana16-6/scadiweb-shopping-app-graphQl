@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 import { connect } from "react-redux";
 import ATTRIBUTES from "../constants/attributes";
 class ProductAttributes extends Component {

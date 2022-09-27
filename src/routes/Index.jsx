@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "../layout/NavBar";
-import NotFound from "../components/NotFound.js";
+import HomePage from "../components/HomePage";
 import Loading from "../components/loading";
 import CartPage from "../pages/CartPage";
 
@@ -14,7 +14,7 @@ class Index extends Component {
         <NavBar />
         <React.Suspense fallback={<Loading />}>
           <Switch>
-            <Route path="/" component={NotFound} exact />
+            <Route path="/" component={HomePage} exact />
             <Route path="/CartPage" component={CartPage} exact />
             <Route
               path="/tech/:id"
@@ -44,7 +44,7 @@ class Index extends Component {
                 <TechCategory client={this.props.client} {...props} />
               )}
             />
-            <Route path="*" component={NotFound} />
+            <Route path="*" component={HomePage} />
           </Switch>
         </React.Suspense>
       </Router>

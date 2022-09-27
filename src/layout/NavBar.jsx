@@ -13,7 +13,7 @@ import {
   IconsDiv,
   CartIcon,
 } from "../css/nav";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 import CartListDropdown from "../components/CartListDropdown";
 import CurrencyList from "../components/CurrencyList";
 class NavBar extends Component {

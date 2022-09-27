@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import ProductAttributes from "../components/productAttributes";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 import ImgsGallery from "./ImgsGallery";
 class CartItems extends Component {
   constructor(props) {

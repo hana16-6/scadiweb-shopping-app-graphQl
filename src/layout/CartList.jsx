@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import CalcTotalCost from "../components/CalcTotalCost";
 import CartItems from "../components/CartItems";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 class CartList extends Component {
   render() {
     return this.props.toggle ? (

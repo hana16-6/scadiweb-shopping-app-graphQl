@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 export default class ImgsGallery extends Component {
   state = {
     showImg: this.props.product.gallery[0],

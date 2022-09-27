@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { GetCategory } from "../utils/Category";
-import styles from '../store/category.module.css'
+import styles from '../css/category.module.css'
 import cart_icon from '../images/Circle Icon.svg'
 import { connect } from "react-redux";
 

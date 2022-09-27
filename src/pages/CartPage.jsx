@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CartItems from "../components/CartItems";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 import { connect } from "react-redux";
 import CalcTotalCost from "../components/CalcTotalCost";
 class CartPage extends Component {

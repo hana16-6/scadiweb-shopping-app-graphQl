@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { GetProduct } from "../utils/Category";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 import { connect } from "react-redux";
 import ATTRIBUTES from "../constants/attributes";
 import Alert from "../components/Alert";

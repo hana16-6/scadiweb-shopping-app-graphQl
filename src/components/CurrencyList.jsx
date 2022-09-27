@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "../store/category.module.css";
+import styles from "../css/category.module.css";
 import arrowUp from "../assets/arrowUp.svg";
 import arrowDown from "../assets/arrowDown.svg";
 import { CURRENCY } from "../constants/currency";
