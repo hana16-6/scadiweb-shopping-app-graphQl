@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@300;400;500;600;700&family=Rubik:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.link{
+  position: relative;
+  text-decoration: none;
+  color: #1D1F22;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all .3s ease-in-out;
+}
+.link.active{
+  color: #5ECE7B !important;
+}
+.link.active::after{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #5ECE7B;
+  bottom: -20px;
+  left: 0px;
+}
+::selection {
+  color: #FFF;
+  background: #5ECE7B;
+}
