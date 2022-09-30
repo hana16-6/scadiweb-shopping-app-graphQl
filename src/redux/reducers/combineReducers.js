@@ -8,6 +8,4 @@ export const rootReducers = combineReducers({
     GetAllProducts,
     AddToCart,
     Changecurrency,
-
-
 })

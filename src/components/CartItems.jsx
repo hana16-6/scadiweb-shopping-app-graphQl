@@ -24,15 +24,19 @@ class CartItems extends Component {
     }
   };
   deleteProduct = (prod) => {
+    console.log(prod);
     const filteredProducts = this.props.cartProducts.filter(
       (el) =>
-        el.id === prod.id &&
-        !el.attributes.every((selec, i) => {
-          return selec.selected === prod.attributes[i].selected;
-        })
+        (el.id === prod.id &&
+          !el.attributes.every((selec, i) => {
+            return selec.selected === prod.attributes[i].selected;
+          })) ||
+        el.id !== prod.id
     );
     this.props.deleteProd(filteredProducts);
-    this.props.decrementCartCount();
+    // this.props.decrementCartCount();
+    this.props.decrementCartCounter(prod.itemCount);
+    console.log(prod.itemCount, "plplp");
   };
   render() {
     return (
@@ -121,6 +125,11 @@ const mapDispatchToProps = (dispatch) => {
       dispatch({
         type: "DELETE_FROM_CART",
         payload: { filterdProducts: arr },
+      }),
+    decrementCartCounter: (count) =>
+      dispatch({
+        type: "INCREMENT_COUNTER_FROM_CART",
+        payload: { itemCounter: count },
       }),
   };
 };

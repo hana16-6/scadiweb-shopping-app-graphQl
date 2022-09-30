@@ -97,16 +97,4 @@ export const AddToCart = (state = initialState, action) => {
     }
 };
 
-// export const AddToCart = (state = initialState, action) => {
 
-//     switch (action.type) {
-//         case "ADD_TO_CART":
-//             const newArr = state.cartList.length > 0 ? state.cartList.map(item => item.id === action.payload.cartList.id ? { ...item, itemCount: item.itemCount + 1 } : item) : [...state.cartList, action.payload.cartList]
-//             return {
-//                 ...state,
-//                 cartList: newArr
-//             }
-//         default:
-//             return state
-//     }
-// }

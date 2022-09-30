@@ -292,11 +292,6 @@ const mapDispatchToProps = (dispatch) => {
     IncrementCartCount: () => dispatch({ type: "INCREMENT_CART_COUNTER" }),
     AddToCart: (cartProd) =>
       dispatch({ type: "ADD_TO_CART", payload: { cartList: cartProd } }),
-    ActiveAttributes: (product, attrItemID, attributesId) =>
-      dispatch({
-        type: "ACTIVE_ATTRIBUTES",
-        payload: { prod: product, id: attrItemID, attrId: attributesId },
-      }),
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(ProductDetails);
